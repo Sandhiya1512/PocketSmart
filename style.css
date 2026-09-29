@@ -1,0 +1,15 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
+body { background:#f0f4f8; display:flex; justify-content:center; padding:20px; }
+.container { width:100%; max-width:400px; }
+h1 { text-align:center; color:#1a73e8; margin-top:10px; }
+.tagline { text-align:center; color:#666; margin-bottom:20px; }
+.balance-card { background:#1a73e8; color:white; padding:20px; border-radius:15px; text-align:center; }
+.summary { display:flex; justify-content:space-around; margin-top:15px; background:rgba(255,255,255,0.15); padding:10px; border-radius:10px; }
+.form-card, .list-card { background:white; padding:20px; border-radius:15px; margin-top:20px; box-shadow:0 4px 10px rgba(0,0,0,0.05); }
+input, select { width:100%; padding:12px; margin:8px 0; border:1px solid #ddd; border-radius:8px; }
+button { width:100%; padding:12px; background:#1a73e8; color:white; border:none; border-radius:8px; font-weight:bold; cursor:pointer; }
+button:hover { background:#1557b0; }
+ul { list-style:none; margin-top:10px; }
+ul li { display:flex; justify-content:space-between; padding:10px; border-bottom:1px solid #eee; }
+.income-text { color:green; } .expense-text { color:red; }
+.clear-btn { background:#ff4757; margin-top:15px; }

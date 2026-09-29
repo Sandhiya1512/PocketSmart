@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PocketSmart - Smart Money Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 PocketSmart</h1>
+        <p class="tagline">Track your money smartly</p>
+
+        <div class="balance-card">
+            <h3>Total Balance</h3>
+            <h2 id="balance">₹0.00</h2>
+            <div class="summary">
+                <div class="income"><span>Income</span><h4 id="income">₹0</h4></div>
+                <div class="expense"><span>Expense</span><h4 id="expense">₹0</h4></div>
+            </div>
+        </div>
+
+        <div class="form-card">
+            <input type="text" id="desc" placeholder="Description e.g., Groceries">
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="type">
+                <option value="expense">Expense</option>
+                <option value="income">Income</option>
+            </select>
+            <button onclick="addTransaction()">Add Transaction</button>
+        </div>
+
+        <div class="list-card">
+            <h3>History</h3>
+            <ul id="list"></ul>
+            <button class="clear-btn" onclick="clearAll()">Clear All</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

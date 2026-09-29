@@ -15,14 +15,24 @@
             <h3>Total Balance</h3>
             <h2 id="balance">₹0.00</h2>
             <div class="summary">
-                <div class="income"><span>Income</span><h4 id="income">₹0</h4></div>
-                <div class="expense"><span>Expense</span><h4 id="expense">₹0</h4></div>
+                <div><span>Income</span><h4 id="income">₹0</h4></div>
+                <div><span>Expense</span><h4 id="expense">₹0</h4></div>
+                <div><span>Budget Left</span><h4 id="budgetLeft">₹10000</h4></div>
             </div>
+            <button onclick="setBudget()" style="margin-top:10px;background:white;color:#1a73e8;padding:5px 10px;font-size:12px">Set Budget</button>
         </div>
 
         <div class="form-card">
-            <input type="text" id="desc" placeholder="Description e.g., Groceries">
+            <input type="text" id="desc" placeholder="Description">
             <input type="number" id="amount" placeholder="Amount">
+            <select id="category">
+                <option value="Food">🍔 Food</option>
+                <option value="Travel">✈️ Travel</option>
+                <option value="Shopping">🛍️ Shopping</option>
+                <option value="Bills">💡 Bills</option>
+                <option value="Salary">💼 Salary</option>
+                <option value="Other">📦 Other</option>
+            </select>
             <select id="type">
                 <option value="expense">Expense</option>
                 <option value="income">Income</option>
@@ -31,11 +41,14 @@
         </div>
 
         <div class="list-card">
-            <h3>History</h3>
+            <h3>Transaction History</h3>
             <ul id="list"></ul>
+            <canvas id="expenseChart" style="margin-top:20px"></canvas>
             <button class="clear-btn" onclick="clearAll()">Clear All</button>
         </div>
+        
+        <p style="text-align:center;margin:20px;color:#888">Made by Sandhiya1512 - PocketSmart v1.0</p>
     </div>
     <script src="script.js"></script>
 </body>
-</html>
+</html>       
